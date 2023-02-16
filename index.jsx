@@ -57,7 +57,7 @@ return (
   <BrowserRouter>
       <div>
         <Routes>
-      	 <Route path="/piano/" element={<Ui/>} />
+      	 <Route path="/autoPiano/" element={<Ui/>} />
         </Routes>
       </div>
     </BrowserRouter>
