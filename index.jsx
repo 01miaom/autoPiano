@@ -21,13 +21,13 @@ const key = [
     {id: 'a3', url:'/a69.mp3', black: [{id: 'a#3', url:'b56.mp3'}]},
     {id: 'b3', url:'/a82.mp3', black: []},
     
-    {id: 'c4', url:'./a84.mp3', black: [{id: 'c#4', url:'b56.mp3'}]},//correct
-    {id: 'd4', url:'./a89.mp3', black: [{id: 'd#4', url:'b56.mp3'}]},
-    {id: 'e4', url:'./a85.mp3', black: []},
-    {id: 'f4', url:'./a73.mp3', black: [{id: 'f#4', url:'b56.mp3'}]},
-    {id: 'g4', url:'./a79.mp3', black: [{id: 'g#4', url:'b56.mp3'}]},
-    {id: 'a4', url:'./a80.mp3', black: [{id: 'a#4', url:'b56.mp3'}]},
-    {id: 'b4', url:'./a65.mp3', black: []},
+    {id: 'c4', url:'/a84.mp3', black: [{id: 'c#4', url:'b56.mp3'}]},//correct
+    {id: 'd4', url:'/a89.mp3', black: [{id: 'd#4', url:'b56.mp3'}]},
+    {id: 'e4', url:'/a85.mp3', black: []},
+    {id: 'f4', url:'/a73.mp3', black: [{id: 'f#4', url:'b56.mp3'}]},
+    {id: 'g4', url:'/a79.mp3', black: [{id: 'g#4', url:'b56.mp3'}]},
+    {id: 'a4', url:'/a80.mp3', black: [{id: 'a#4', url:'b56.mp3'}]},
+    {id: 'b4', url:'/a65.mp3', black: []},
     
     /*
     {id: 'c5', url:'./a87.mp3', black: [{id: 'c#5', url:'b56.mp3'}]},//correct
