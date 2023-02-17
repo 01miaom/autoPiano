@@ -3,41 +3,42 @@ const {BrowserRouter, Routes, Route, Link} = ReactRouterDOM;
 
 
 const key = [
-    /*
-    {id: 'c2', black: [{id: 'c#2'}]},
-    {id: 'd2', black: [{id: 'd#2'}]},
-    {id: 'e2', black: []},
-    {id: 'f2', black: [{id: 'f#2'}]},
-    {id: 'g2', black: [{id: 'g#2'}]},
-    {id: 'a2', black: [{id: 'a#2'}]},//缺素材了
-    {id: 'b2', black: []},
-    */
     
-    {id: 'c3', url:'./a56.mp3', black: [{id: 'c#3', url:'b56.mp3'}]},//correct
-    {id: 'd3', url:'./a56.mp3', black: [{id: 'd#3', url:'b56.mp3'}]},
-    {id: 'e3', url:'./a56.mp3', black: []},
-    {id: 'f3', url:'./a56.mp3', black: [{id: 'f#3', url:'b56.mp3'}]},
-    {id: 'g3', url:'./a56.mp3', black: [{id: 'g#3', url:'b56.mp3'}]},
-    {id: 'a3', url:'./a56.mp3', black: [{id: 'a#3', url:'b56.mp3'}]},
-    {id: 'b3', url:'./a56.mp3', black: []},
+    {id: 'c2', url:'/a49.mp3', black: [{id: 'c#2', url:'b56.mp3'}]},//correct
+    {id: 'd2', url:'/a50.mp3', black: [{id: 'd#2', url:'b56.mp3'}]},
+    {id: 'e2', url:'/a51.mp3', black: []},
+    {id: 'f2', url:'/a52.mp3', black: [{id: 'f#2', url:'b56.mp3'}]},
+    {id: 'g2', url:'/a53.mp3', black: [{id: 'g#2', url:'b56.mp3'}]},
+    {id: 'a2', url:'/a54.mp3', black: [{id: 'a#2', url:'b56.mp3'}]},
+    {id: 'b2', url:'/a55.mp3', black: []},
     
-    {id: 'c3', url:'./a56.mp3', black: [{id: 'c#3', url:'b56.mp3'}]},//correct
-    {id: 'd3', url:'./a56.mp3', black: [{id: 'd#3', url:'b56.mp3'}]},
-    {id: 'e3', url:'./a56.mp3', black: []},
-    {id: 'f3', url:'./a56.mp3', black: [{id: 'f#3', url:'b56.mp3'}]},
-    {id: 'g3', url:'./a56.mp3', black: [{id: 'g#3', url:'b56.mp3'}]},
-    {id: 'a3', url:'./a56.mp3', black: [{id: 'a#3', url:'b56.mp3'}]},
-    {id: 'b3', url:'./a56.mp3', black: []},
     
-    {id: 'c3', url:'./a56.mp3', black: [{id: 'c#3', url:'b56.mp3'}]},//correct
-    {id: 'd3', url:'./a56.mp3', black: [{id: 'd#3', url:'b56.mp3'}]},
-    {id: 'e3', url:'./a56.mp3', black: []},
-    {id: 'f3', url:'./a56.mp3', black: [{id: 'f#3', url:'b56.mp3'}]},
-    {id: 'g3', url:'./a56.mp3', black: [{id: 'g#3', url:'b56.mp3'}]},
-    {id: 'a3', url:'./a56.mp3', black: [{id: 'a#3', url:'b56.mp3'}]},
-    {id: 'b3', url:'./a56.mp3', black: []},
+    {id: 'c3', url:'/a56.mp3', black: [{id: 'c#3', url:'b56.mp3'}]},//correct
+    {id: 'd3', url:'/a57.mp3', black: [{id: 'd#3', url:'b56.mp3'}]},
+    {id: 'e3', url:'/a48.mp3', black: []},
+    {id: 'f3', url:'/a81.mp3', black: [{id: 'f#3', url:'b56.mp3'}]},
+    {id: 'g3', url:'/a87.mp3', black: [{id: 'g#3', url:'b56.mp3'}]},
+    {id: 'a3', url:'/a69.mp3', black: [{id: 'a#3', url:'b56.mp3'}]},
+    {id: 'b3', url:'/a82.mp3', black: []},
+    
+    {id: 'c4', url:'./a84.mp3', black: [{id: 'c#4', url:'b56.mp3'}]},//correct
+    {id: 'd4', url:'./a89.mp3', black: [{id: 'd#4', url:'b56.mp3'}]},
+    {id: 'e4', url:'./a85.mp3', black: []},
+    {id: 'f4', url:'./a73.mp3', black: [{id: 'f#4', url:'b56.mp3'}]},
+    {id: 'g4', url:'./a79.mp3', black: [{id: 'g#4', url:'b56.mp3'}]},
+    {id: 'a4', url:'./a80.mp3', black: [{id: 'a#4', url:'b56.mp3'}]},
+    {id: 'b4', url:'./a65.mp3', black: []},
     
     /*
+    {id: 'c5', url:'./a87.mp3', black: [{id: 'c#5', url:'b56.mp3'}]},//correct
+    {id: 'd5', url:'./a68.mp3', black: [{id: 'd#5', url:'b56.mp3'}]},
+    {id: 'e5', url:'./a70.mp3', black: []},
+    {id: 'f5', url:'./a71.mp3', black: [{id: 'f#5', url:'b56.mp3'}]},
+    {id: 'g5', url:'./a72.mp3', black: [{id: 'g#5', url:'b56.mp3'}]},
+    {id: 'a5', url:'./a74.mp3', black: [{id: 'a#5', url:'b56.mp3'}]},
+    {id: 'b5', url:'./a75.mp3', black: []},
+    
+    
     {id: 'c3', url:'./a56.mp3', black: [{id: 'c#3', url:'b56.mp3'}]},//correct
     {id: 'd3', url:'./a56.mp3', black: [{id: 'd#3', url:'b56.mp3'}]},
     {id: 'e3', url:'./a56.mp3', black: []},
@@ -74,10 +75,10 @@ class Ui extends React.Component {
                 {key.map((key, index) =>{
                     return(
                         <div className="group">
-                        <White />
-                        {key.black.map((black, index) =>{
+                        <White i={index}/>
+                        {key.black.map((black) =>{
                             return(
-                                <Black />
+                                <Black i={index}/>
                             );
                         })}
                         </div>
@@ -90,17 +91,29 @@ class Ui extends React.Component {
 }
 
 class Black extends React.Component {
+    keyclick(i){
+        console.log(i)
+    }
     render() {
+        let i = this.props.i; 
         return (
-                <div className="blackkey"></div>
+                <div className="blackkey" onClick={(e)=>this.keyclick(i)}></div>
         );
     }
 }
 
 class White extends React.Component {
+    keyclick(i){
+        console.log(i)
+        var sound = new Howl({
+            src: ['../Assets/'+key[i].url]
+        });
+        sound.play()
+    }
     render() {
+        let i = this.props.i; 
         return (
-                <div className="whitekey"></div>      
+                <div className="whitekey" onClick={(e)=>this.keyclick(i)}></div>      
         );
     }
 }
