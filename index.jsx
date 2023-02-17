@@ -106,7 +106,7 @@ class White extends React.Component {
     keyclick(i){
         console.log(i)
         var sound = new Howl({
-            src: ['../Assets/'+key[i].url]
+            src: ['../Assets'+key[i].url]
         });
         sound.play()
     }
