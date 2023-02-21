@@ -1,6 +1,7 @@
 const {useMatch, useParams, useLocation} = ReactRouterDOM;
 const {BrowserRouter, Routes, Route, Link} = ReactRouterDOM;
 
+var currentKey = 0;
 
 const key = [
     
@@ -48,6 +49,12 @@ const key = [
     {id: 'b3', url:'./a56.mp3', black: []},
     */
 ]//cdefgab
+
+
+//乐谱
+const music = [7,1,2,3,3,5,3,3,
+               7,1,2,3,2,5,3,2,3,1,2,7,1,5]
+
 
 class App extends React.Component {
 render() {
@@ -102,8 +109,25 @@ class Black extends React.Component {
 }
 
 class White extends React.Component {
+    //normal play
     keyclick(i){
-        console.log(i)
+        
+        var sound = new Howl({
+            src: ['./Assets'+key[i].url]
+            //src: ['../Assets/'+key[i].url]
+        });
+        sound.play()
+    }
+    //auto play
+    keyauto(i){
+        
+        if(currentKey > music.length){
+            currentKey = 0;
+        }
+        
+        i = music[currentKey]
+        currentKey = currentKey + 1;
+        
         var sound = new Howl({
             src: ['./Assets'+key[i].url]
         });
@@ -112,7 +136,7 @@ class White extends React.Component {
     render() {
         let i = this.props.i; 
         return (
-                <div className="whitekey" onClick={(e)=>this.keyclick(i)}></div>      
+                <div className="whitekey" onClick={(e)=>this.keyauto(i)}></div>      
         );
     }
 }
