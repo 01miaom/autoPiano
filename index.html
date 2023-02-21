@@ -12,6 +12,8 @@
     <script src="https://unpkg.com/react-router-dom@6.3.0/umd/react-router-dom.development.js" crossorigin></script>
      <script type="text/babel" src="./index.jsx" ></script>
     <script src="./Libs/howler.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.birds.min.js"></script>
     <title>Auto Piano</title>
 </head>
 
@@ -21,4 +23,22 @@
     </div>
 
 </body>
+<script> 
+VANTA.BIRDS({
+  el: "body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  birdSize: 1.10,
+  speedLimit: 2.00,
+  separation: 100.00,
+  alignment: 10.00,
+  cohesion: 48.00,
+  quantity: 4.00
+}) 
+</script>
 </html>
