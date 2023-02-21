@@ -1,6 +1,6 @@
 # autoPiano
 
-![](./demo.png)
+![](./picture.png)
 
 reference:
 
