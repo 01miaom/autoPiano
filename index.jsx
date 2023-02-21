@@ -125,7 +125,7 @@ class White extends React.Component {
             currentKey = 0;
         }
         
-        i = music[currentKey]
+        i = music[currentKey] + 6;
         currentKey = currentKey + 1;
         
         var sound = new Howl({
